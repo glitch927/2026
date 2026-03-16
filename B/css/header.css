@@ -1,0 +1,108 @@
+header {
+    position: fixed;
+    width: 1920px;
+    height: 80px;
+    display: flex;
+    background: rgb(26, 42, 66, 0.6);
+    z-index: 1000;
+}
+header p,a {
+    color:azure;
+    text-decoration: none;
+}
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+/* 네비 */
+nav {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-box {
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.25em;
+    font-weight: bold;
+    width: 200px;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main-box {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.btn-w {
+    position: absolute;
+    width: 3px;
+    height: 16px;
+    background-color: #c9a84c;
+    transition: all 0.3s;
+}
+.btn-h {
+    transform: rotate(90deg);
+    width: 3px;
+    height: 16px;
+    background-color: #c9a84c;
+    transition: all 0.3s;
+}
+.nav-box:focus {
+    height: 240px;
+    outline: none;
+
+    .btn-w {
+        transform: rotate(90deg);
+    }
+    .btn-h {
+        transform: rotate(270deg);
+        opacity: 0;
+    }
+    .sub-box {
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+.nav-box:not(:hover) {
+    height: 80px;
+
+    .btn-w {
+        transform: rotate(0deg);
+    }
+    .btn-h {
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+}
+nav .nav-box .sub-box p {
+    line-height: 75px;
+    font-weight: bold;
+}
+.sub-box {
+    border-radius: 15px;
+    width: 100%;
+    height: 150px;
+    background: #2c3e5c;
+    opacity: 0;
+    transition: all 0.3s;
+}
+/* 네비 */
+.login {
+    width: 15%;
+    height: 80px;
+}
