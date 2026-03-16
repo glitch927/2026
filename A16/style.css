@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.df-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    transform:rotate(-45deg);
+}
+.line {
+    width: 290px;
+    height: 7.5px;
+}
+#wrap {
+    width: 100%;
+    height: 100vh;
+}
+.box1 {
+    width: 1180px;
+    height: 400px;
+}
+.box2 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.check {
+    width: 35px;
+    height: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: solid 10px white;
+    border-bottom: solid 10px white;
+}
+.pgs2 {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    border-radius: 10px;
+    transform:rotate(-90deg);
+    background-color: #fff;
+}
+.pgs3 {
+    position:absolute;
+    width: 10px;
+    height: 50px;
+    border-radius: 10px;
+    transform:rotate(180deg);
+    background-color: #fff;
+}
+.pgs-st {
+    width: 150px;
+    height: 7.5px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #3766ff;
+}
+.box3 {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+.text {
+    width: 360px;
+    height: 100%;
+}
+.title {
+    font-size: 20px;
+    color: gray;
+}
+.sub {
+    font-size: 30px;
+    font-weight: bold;
+}
+.Status {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.com {background-color: green;}
+.pgs1 {position: relative; background-color: #3766ff;}
+.pend {background-color: #a7bbff;}
+.com-st {background-color: green;}
+.pend-st {background-color: #a7bbff;}
+.text1 .Status {color: green;}
+.text2 .Status {color: #3766ff;}
+.text3 .Status {color: dimgray;}

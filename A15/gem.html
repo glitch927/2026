@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 콘텐츠 카드 그리드</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        /* 그리드 컨테이너 설정 */
+        .card-grid {
+            display: grid;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 반응형 중단점(Breakpoint) 설정 */
+        
+        /* 1. 기본 (767px 이하): 가로 1열 */
+        @media (max-width: 767px) {
+            .card-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* 2. 768px ~ 1023px: 가로 2열 */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* 3. 1024px 이상: 가로 4열 */
+        @media (min-width: 1024px) {
+            .card-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* 카드 개별 스타일 */
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 이미지 영역: 비율 유지 */
+        .card-image-wrapper {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* 이미지 가로세로 비율 유지 */
+            overflow: hidden;
+            background-color: #eee;
+        }
+
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 비율을 유지하면서 영역을 꽉 채움 */
+            display: block;
+        }
+
+        /* 텍스트 및 버튼 영역 */
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .more-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-grid">
+        <article class="card">
+            <div class="card-image-wrapper">
+                <img src="card1.jpg" alt="카드 이미지 1">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">이미지 샘플카드</h2>
+                <a href="#" class="more-btn">더보기</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image-wrapper">
+                <img src="card2.jpg" alt="카드 이미지 2">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">이미지 샘플카드</h2>
+                <a href="#" class="more-btn">더보기</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image-wrapper">
+                <img src="card3.jpg" alt="카드 이미지 3">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">이미지 샘플카드</h2>
+                <a href="#" class="more-btn">더보기</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image-wrapper">
+                <img src="card4.jpg" alt="카드 이미지 4">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">이미지 샘플카드</h2>
+                <a href="#" class="more-btn">더보기</a>
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>
