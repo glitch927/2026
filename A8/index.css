@@ -1,0 +1,152 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+#wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+}
+.box2 {
+    width: 750px;
+    height: 700px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.basket-title {
+    width: 100%;
+    height: 75px;
+    border-radius: 15px 15px 0 0;
+    background-color: #2e2e2e;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+}
+.product {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    border-bottom: solid 1.75px #d4d4d4;
+}
+.img-box {
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+img {
+    border-radius: 15px;
+}
+.text-box {
+    margin: 0;
+    padding: 10px 0px;
+    width: 50%;
+    height: 75px;
+}
+.product-title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.product-sub {
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-addex {
+    color:gray;
+    font-weight: bold;
+}
+.text-box2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.add, .miuns {
+    margin: 0px -2.5px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    border: solid 1px darkgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.number, .price {
+    font-weight: bold;
+}
+.cencle {
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dd0000;
+    color: white;
+    margin-left: -3px;
+    cursor: pointer;
+}
+.cost {
+    width: 100%;
+    padding-top: 15px;
+    background-color: #f2f2f2;
+}
+.product-cost, .deli-price, .total-cost {
+    width: 95%;
+    display: flex;
+}
+.product-cost, .deli-price {
+    height: 35px;
+}
+.deli-price {
+    border-bottom: solid 2px #d4d4d4;
+}
+.total-cost {
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+}
+.product-cost1 {
+    margin-right: 82%;
+}
+.deli-price1 {
+    margin-right: 85%;
+}
+.total-cost-text {
+    margin-right: 76%;
+}
+.button {
+    display: flex;
+}
+.more-button {
+    margin: 25px 0px 0px 230px;
+    text-align: center;
+    line-height: 50px;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: #747780;
+}
+.finish-button {
+    margin: 25px 0px 0px 20px;
+    text-align: center;
+    line-height: 50px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: #16bb00;
+}
