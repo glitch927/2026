@@ -8,6 +8,14 @@ btn.addEventListener("click", function() {
     menu.textContent = menuflip[result];
 });
 
+menu.addEventListener('click', function() {
+    copy = menu.textContent;
+
+    navigator.clipboard.writeText(copy).then(() => {
+        alert("복사완료")
+    })
+})
+
 function getRandomMenu() {
     return Math.floor(Math.random()*menuflip.length);
 }
