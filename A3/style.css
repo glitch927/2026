@@ -1,42 +1,45 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     user-select: none;
+    transition: all 0.3s;
+}
+body {
+    background: #fff;
 }
 #wrap {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: #fff;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
 }
-input {display: none;}
-.toggle {padding: 0px 15px;
+.box {
+    position: relative;
+    padding: 10px;
     display: flex;
     align-items: center;
-    border-radius:50px;
-    width: 450px;
-    height: 200px;
-    background-color: #b3b3b3;
-    transition: all 0.5s;
+    width: 500px;
+    height: 150px;
+    border: solid 1px black;
+    border-radius: 15% / 50%;
+    background: #dfdfdf;
 }
 label {
-    display: block;
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
+    display: flex;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    transition: all 0.5s;
+    background: #fff;
 }
-input:checked ~ label{
-    background-color: #fffb00;
-    transform: translateX(200%);
+input:checked ~ label {
+    transform: translateX(335px);
+    background: yellow;
 }
-.toggle:has(input:checked) {
-    background-color: #132574;
+.box:has(input:checked) {
+    background: darkblue;
 }
-#wrap:has(input:checked) {
-    background-color: #222;
+body:has(input:checked) {
+    background: #222;
 }

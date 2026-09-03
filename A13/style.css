@@ -1,106 +1,80 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
+    box-sizing: border-box;
 }
-a {
-    font-size: 30px;
-    font-weight: bold;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-}
-#wrap {
+body {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.box {
-    width: 225px;
-    height: 75px;
-    border-radius: 15px;
-    border: solid 4px black;
-    text-align: center;
-    line-height: 75px;
-}
-
-#modal {
-    display: none;
-    position: fixed;
-    width: 600px;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 15px;
-    border: solid 4px black;
-    text-align: center;
-}
-.close-bar {
-    padding: 10px 10px;
-    width: 580px;
+.open {
+    width: 200px;
     height: 50px;
+    background: limegreen;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .close {
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-}
-.close:hover {
-    color: white;
-    background-color: red;
-}
-.container {
-    display: grid;
-    justify-content: center;
-}
-.text-box {
-    width: 500px;
-    height: 125px;
-    border-bottom: solid 1px gray;
-}
-.enter {
-    width: 100%;
-    height: 225px;
-}
-.input {
-    width: 100%;
-    height: 75px;
-}
-input {
-    margin: 20px 10px;
-    padding: 0px 10px;
-    width: 180px;
-    height: 25px;
-    border-radius: 15px;
-    border: solid 3px black;
-}
-.button {
-    width: 100%;
-    height: 125px;
+    background: red;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.login {
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 15px;
+    color: white;
     font-weight: bold;
-    border-radius: 15px;
-    background-color: #7ee914;
-    cursor: pointer;
 }
-.login:active {
-    background-color: #419c2a;
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+}
+.modal-popup {
+    position: relative;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin: 15px 0px;
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px black;
+}
+button {
+    position: absolute;
+    bottom: 15px;
+    background: #fff;
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-#modal:target {
-    display: block;
+#login:checked ~ .modal {
+    display: flex;
 }

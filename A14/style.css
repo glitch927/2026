@@ -1,80 +1,49 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
+    box-sizing: border-box;
 }
-#wrap {
+body {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.setting-btn {
-    position: relative; /* 툴팁 위치의 기준점 */
+.setting, .logout {
+    margin: 10px;
+    position: relative;
     width: 100px;
-    padding: 10px;
-    background-color: #eee;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-right: 15px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-/* 툴팁 박스 (말풍선 몸통) */
-.setting-btn::after {
-    content: attr(data-tooltip); /* HTML의 data-tooltip 내용을 가져옴 */
+.setting::after {
+    content: "“설정” 버튼을 눌러 서비스를 설정할 수 있습니다.";
     position: absolute;
-    bottom: 120%; /* 버튼 위로 띄움 */
-    left: 50%;
-    transform: translateX(-50%);
-    
-    padding: 8px 12px;
-    background-color: #333;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    white-space: nowrap; /* 글자 줄바꿈 방지 */
-    
+    bottom: 50px;
+    left: 0;
+    width: 350px;
+    height: 40px;
     display: none;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
 }
-
-/* ★ 호버 및 포커스 시 노출 */
-.setting-btn:hover::after,
-.setting-btn:focus::after {
-    display: block;
-}
-.login-btn {
-    position: relative; /* 툴팁 위치의 기준점 */
-    width: 100px;
-    padding: 10px;
-    background-color: #eee;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-right: 15px;
-}
-
-/* 툴팁 박스 (말풍선 몸통) */
-.login-btn::after {
-    content: attr(data-tooltip); /* HTML의 data-tooltip 내용을 가져옴 */
+.logout::after {
+    content: "로그아웃되고 메인페이지로 이동합니다.";
     position: absolute;
-    bottom: 6px;
-    left: 200%;
-    transform: translateX(-50%);
-    
-    padding: 8px 12px;
-    background-color: #333;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    white-space: nowrap; /* 글자 줄바꿈 방지 */
-
+    left: 110px;
+    width: 300px;
+    height: 40px;
     display: none;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
 }
-
-/* ★ 호버 및 포커스 시 노출 */
-.login-btn:hover::after,
-.login-btn:focus::after {
-    display: block;
+.setting:hover::after, .setting:focus::after, .logout:hover::after, .logout:focus::after{
+    display: flex;
 }
