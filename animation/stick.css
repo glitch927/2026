@@ -1,0 +1,81 @@
+.stick {
+    position: absolute;
+    width: 0;
+    height: 50px;
+    background: #000;
+}
+.stick:nth-child(1) {
+    top: 0;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.5s;
+    background: #B39DDB;
+}
+.stick:nth-child(2) {
+    top: 50px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.2s;
+    background: #FF8A80;
+}
+.stick:nth-child(3) {
+    top: 100px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.4s;
+    background: #80CBC4;
+}
+.stick:nth-child(4) {
+    top: 150px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.3s;
+    background: #B39DDB;
+}
+.stick:nth-child(5) {
+    top: 200px;
+    animation: stick 1s ease-in forwards;
+    background: #FF8A80;
+}
+.stick:nth-child(6) {
+    top: 250px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.25s;
+    background: #80CBC4;
+}
+.stick:nth-child(7) {
+    top: 300px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.1s;
+    background: #B39DDB;
+    
+}
+.stick:nth-child(8) {
+    top: 350px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.35s;
+    background: #FF8A80;
+}
+.stick:nth-child(9) {
+    top: 400px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.15s;
+    background: #80CBC4;
+}
+.stick:nth-child(10) {
+    top: 450px;
+    animation: stick 1s ease-in forwards;
+    animation-delay: 0.45s;
+    background: #B39DDB;
+}
+
+@keyframes stick {
+    33.33% {
+        width: 0;
+        right: 0;
+    }
+    66.66% {
+        width: 100%;
+    }
+    99.99% {
+        width: 0;
+        left: 0;
+    }
+}
+/* stick animation */

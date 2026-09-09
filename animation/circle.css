@@ -1,0 +1,203 @@
+/* AI ASSIST */
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(11) {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #df3d66 0deg,
+        #df3d66 var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 1.6s;
+}
+.circle:nth-child(12) {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #aad467 0deg,
+        #aad467 var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 1.75s;
+}
+.circle:nth-child(13) {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #67c2ae 0deg,
+        #67c2ae var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 1.8s;
+}
+.circle:nth-child(14) {
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #d6d648 0deg,
+        #d6d648 var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 1.85s;
+}
+.circle:nth-child(15) {
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: conic-gradient(
+        black 0deg,
+        black var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in forwards;
+    animation-delay: 1.9s;
+}
+.border-circle {
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #000;
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+        background: conic-gradient(
+            black 0deg,
+            black var(--angle),
+            transparent var(--angle),
+            transparent 360deg
+        );
+        animation: circle 1s ease-in-out forwards;
+        animation-delay: 2.3s;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        white 0deg,
+        white var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in-out forwards;
+    animation-delay: 2.3s;
+}
+.circle:nth-child(17) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #000;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background: conic-gradient(
+        black 0deg,
+        black var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in-out forwards;
+    animation-delay: 2.4s;
+}
+.circle:nth-child(18) {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #df3d66 0deg,
+        #df3d66 var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 2.8s;
+}
+.circle:nth-child(19) {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #aad467 0deg,
+        #aad467 var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 2.95s;
+}
+.circle:nth-child(20) {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #67c2ae 0deg,
+        #67c2ae var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 3s;
+}
+.circle:nth-child(21) {
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #d6d648 0deg,
+        #d6d648 var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in;
+    animation-delay: 3.05s;
+}
+.circle:nth-child(22) {
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: conic-gradient(
+        white 0deg,
+        white var(--angle),
+        transparent var(--angle),
+        transparent 360deg
+    );
+    animation: circle 1s ease-in forwards;
+    animation-delay: 3.1s;
+}
+@keyframes circle {
+    0% {--angle: 0deg;}
+    60% {--angle: 360deg;}
+    100% {--angle: 360deg;}
+}
+/* AI ASSIST */
+/* circle animation */
