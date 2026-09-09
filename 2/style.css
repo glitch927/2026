@@ -20,6 +20,11 @@
         inherits: false;
         initial-value: 0;
     }
+    @property --ccc {
+        syntax: '<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
     .click {
         position: absolute;
         left: 50%;
@@ -33,7 +38,14 @@
         transition: all 0.3s;
     }
     .click:focus {
-        background: #47c547;
+        
+        background: conic-gradient(
+            #47c547 0deg,
+            #47c547 var(--ccc),
+            transparent var(--ccc),
+            transparent 360deg
+        );
+        animation: circle 1s ease-in forwards;
     }
     .warp {
         position: relative;
@@ -73,4 +85,13 @@
     }
     body:focus .warp .box {
         background: red;
+    }
+
+    @keyframes circle {
+        from {
+            --ccc: 0deg;
+        }
+        to {
+            --ccc: 360deg;
+        }
     }
