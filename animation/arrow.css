@@ -4,7 +4,7 @@
     width: 810px;
     height: 125px;
     background: #aad467;
-    animation: arrow 1.2s ease-out forwards;
+    animation: arrow 1s ease-out forwards;
     animation-delay: 3.8s;
 }
 .arrow:nth-child(23):after {
@@ -24,7 +24,7 @@
     width: 810px;
     height: 150px;
     background: #67c2ae;
-    animation: arrow 1.2s ease-out forwards;
+    animation: arrow 1s ease-out forwards;
     animation-delay: 3.9s;
 }
 .arrow:nth-child(24):after {
@@ -44,7 +44,7 @@
     width: 810px;
     height: 200px;
     background: #7b339c;
-    animation: arrow 1.2s ease-out forwards;
+    animation: arrow 1s ease-out forwards;
     animation-delay: 4s;
 }
 .arrow:nth-child(25):after {
@@ -64,7 +64,7 @@
     width: 810px;
     height: 250px;
     background: #df3d66;
-    animation: arrow 1.2s ease-out forwards;
+    animation: arrow 1s ease-out forwards;
     animation-delay: 4.1s;
 }
 .arrow:nth-child(26):after {
@@ -77,6 +77,125 @@
     background: #df3d66;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
+.arrow:nth-child(27) {
+    position: absolute;
+    left: -900px;
+    width: calc( 100% + 100px );
+    height: 500px;
+    background: orange;
+    clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
+    animation: arrow 1s;
+    animation-delay: 4.85s;
+}
+.arrow:nth-child(28) {
+    position: absolute;
+    left: -1000px;
+    width: calc( 100% + 150px );
+    height: 500px;
+    background: black;
+    clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
+    animation: arrow 1s forwards;
+    animation-delay: 4.92s;
+}
+.arrow:nth-child(29) {
+    position: absolute;
+    left: -1000px;
+    width: 810px;
+    height: 125px;
+    background: #aad467;
+    animation: arrow 1s ease-out forwards;
+    animation-delay: 5.35s;
+}
+.arrow:nth-child(29):after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -120px;
+    width: 125px;
+    height: 225px;
+    background: #aad467;
+    clip-path: polygon(0% 5%, 90% 50%, 0% 95%);
+}
+.arrow:nth-child(30) {
+    position: absolute;
+    bottom: -10px;
+    left: -1000px;
+    width: 810px;
+    height: 150px;
+    background: #67c2ae;
+    animation: arrow 1s ease-out forwards;
+    animation-delay: 5.45s;
+}
+.arrow:nth-child(30):after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -145px;
+    width: 150px;
+    height: 250px;
+    background: #67c2ae;
+    clip-path: polygon(0% 0%, 90% 50%, 0% 100%);
+}
+.arrow:nth-child(31) {
+    position: absolute;
+    top: 90px;
+    left: -1000px;
+    width: 810px;
+    height: 200px;
+    background: #7b339c;
+    animation: arrow 1s ease-out forwards;
+    animation-delay: 5.55s;
+}
+.arrow:nth-child(31):after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    right: -145px;
+    width: 175px;
+    height: 330px;
+    background: #7b339c;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+.arrow:nth-child(32) {
+    position: absolute;
+    bottom: 75px;
+    left: -1000px;
+    width: 810px;
+    height: 250px;
+    background: #df3d66;
+    animation: arrow 1s ease-out forwards;
+    animation-delay: 5.65s;
+}
+.arrow:nth-child(32):after {
+    content: "";
+    position: absolute;
+    top: -75px;
+    right: -170px;
+    width: 200px;
+    height: 400px;
+    background: #df3d66;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+.arrow:nth-child(33) {
+    position: absolute;
+    left: -900px;
+    width: calc( 100% + 100px );
+    height: 500px;
+    background: orange;
+    clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
+    animation: arrow 1s;
+    animation-delay: 6.4s;
+}
+.arrow:nth-child(34) {
+    position: absolute;
+    left: -1000px;
+    width: calc( 100% + 150px );
+    height: 500px;
+    background: white;
+    clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
+    animation: arrow 1s forwards;
+    animation-delay: 6.47s;
+}
 
 
 @keyframes arrow {
@@ -84,7 +203,7 @@
         transform: translateX(-1000px);
     }
     to {
-        transform: translateX(2000px);
+        transform: translateX(1000px);
     }
 }
 /* arrow */
