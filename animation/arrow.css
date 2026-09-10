@@ -1,13 +1,13 @@
-.arrow:nth-child(23) {
+.arrow:nth-child(53) {
     position: absolute;
     left: -1000px;
     width: 810px;
     height: 125px;
     background: #aad467;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 3.8s;
+    animation-delay: 5s;
 }
-.arrow:nth-child(23):after {
+.arrow:nth-child(53):after {
     content: "";
     position: absolute;
     top: -50px;
@@ -17,7 +17,7 @@
     background: #aad467;
     clip-path: polygon(0% 5%, 90% 50%, 0% 95%);
 }
-.arrow:nth-child(24) {
+.arrow:nth-child(54) {
     position: absolute;
     bottom: -10px;
     left: -1000px;
@@ -25,9 +25,9 @@
     height: 150px;
     background: #67c2ae;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 3.9s;
+    animation-delay: 5.1s;
 }
-.arrow:nth-child(24):after {
+.arrow:nth-child(54):after {
     content: "";
     position: absolute;
     top: -50px;
@@ -37,7 +37,7 @@
     background: #67c2ae;
     clip-path: polygon(0% 0%, 90% 50%, 0% 100%);
 }
-.arrow:nth-child(25) {
+.arrow:nth-child(55) {
     position: absolute;
     top: 90px;
     left: -1000px;
@@ -45,9 +45,9 @@
     height: 200px;
     background: #7b339c;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 4s;
+    animation-delay: 5.2s;
 }
-.arrow:nth-child(25):after {
+.arrow:nth-child(55):after {
     content: "";
     position: absolute;
     top: -65px;
@@ -57,7 +57,7 @@
     background: #7b339c;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
-.arrow:nth-child(26) {
+.arrow:nth-child(56) {
     position: absolute;
     bottom: 75px;
     left: -1000px;
@@ -65,9 +65,9 @@
     height: 250px;
     background: #df3d66;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 4.1s;
+    animation-delay: 5.3s;
 }
-.arrow:nth-child(26):after {
+.arrow:nth-child(56):after {
     content: "";
     position: absolute;
     top: -75px;
@@ -77,7 +77,7 @@
     background: #df3d66;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
-.arrow:nth-child(27) {
+.arrow:nth-child(57) {
     position: absolute;
     left: -900px;
     width: calc( 100% + 100px );
@@ -85,9 +85,9 @@
     background: orange;
     clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
     animation: arrow 1s;
-    animation-delay: 4.85s;
+    animation-delay: 6.05s;
 }
-.arrow:nth-child(28) {
+.arrow:nth-child(58) {
     position: absolute;
     left: -1000px;
     width: calc( 100% + 150px );
@@ -95,18 +95,18 @@
     background: black;
     clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
     animation: arrow 1s forwards;
-    animation-delay: 4.92s;
+    animation-delay: 6.12s;
 }
-.arrow:nth-child(29) {
+.arrow:nth-child(59) {
     position: absolute;
     left: -1000px;
     width: 810px;
     height: 125px;
     background: #aad467;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 5.35s;
+    animation-delay: 6.55s;
 }
-.arrow:nth-child(29):after {
+.arrow:nth-child(59):after {
     content: "";
     position: absolute;
     top: -50px;
@@ -116,7 +116,7 @@
     background: #aad467;
     clip-path: polygon(0% 5%, 90% 50%, 0% 95%);
 }
-.arrow:nth-child(30) {
+.arrow:nth-child(60) {
     position: absolute;
     bottom: -10px;
     left: -1000px;
@@ -124,9 +124,9 @@
     height: 150px;
     background: #67c2ae;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 5.45s;
+    animation-delay: 6.65s;
 }
-.arrow:nth-child(30):after {
+.arrow:nth-child(60):after {
     content: "";
     position: absolute;
     top: -50px;
@@ -136,7 +136,7 @@
     background: #67c2ae;
     clip-path: polygon(0% 0%, 90% 50%, 0% 100%);
 }
-.arrow:nth-child(31) {
+.arrow:nth-child(61) {
     position: absolute;
     top: 90px;
     left: -1000px;
@@ -144,9 +144,9 @@
     height: 200px;
     background: #7b339c;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 5.55s;
+    animation-delay: 6.75s;
 }
-.arrow:nth-child(31):after {
+.arrow:nth-child(61):after {
     content: "";
     position: absolute;
     top: -65px;
@@ -156,7 +156,7 @@
     background: #7b339c;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
-.arrow:nth-child(32) {
+.arrow:nth-child(62) {
     position: absolute;
     bottom: 75px;
     left: -1000px;
@@ -164,9 +164,9 @@
     height: 250px;
     background: #df3d66;
     animation: arrow 1s ease-out forwards;
-    animation-delay: 5.65s;
+    animation-delay: 6.85s;
 }
-.arrow:nth-child(32):after {
+.arrow:nth-child(62):after {
     content: "";
     position: absolute;
     top: -75px;
@@ -176,7 +176,7 @@
     background: #df3d66;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
-.arrow:nth-child(33) {
+.arrow:nth-child(63) {
     position: absolute;
     left: -900px;
     width: calc( 100% + 100px );
@@ -184,9 +184,9 @@
     background: orange;
     clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
     animation: arrow 1s;
-    animation-delay: 6.4s;
+    animation-delay: 7.6s;
 }
-.arrow:nth-child(34) {
+.arrow:nth-child(64) {
     position: absolute;
     left: -1000px;
     width: calc( 100% + 150px );
@@ -194,7 +194,7 @@
     background: white;
     clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
     animation: arrow 1s forwards;
-    animation-delay: 6.47s;
+    animation-delay: 7.67s;
 }
 
 

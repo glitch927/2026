@@ -1,4 +1,4 @@
-.circle:nth-child(35) {
+.circle:nth-child(65) {
     position: absolute;
     top: 0;
     left: 50%;
@@ -12,10 +12,10 @@
         #df3d66 180deg,
         #df3d66 360deg
     );
-    animation: seesaw-circle1 5s forwards;
-    animation-delay: 7.5s;
+    animation: seesaw-circle1 3s forwards;
+    animation-delay: 8.7s;
 }
-.stick:nth-child(36) {
+.stick:nth-child(66) {
     position: absolute;
     top: 0;
     left: 50%;
@@ -24,10 +24,10 @@
     height: 15px;
     border-radius: 15px;
     background: #df3d66;
-    animation: seesaw-stick1 5s forwards;
-    animation-delay: 7.5s;
+    animation: seesaw-stick1 3s forwards;
+    animation-delay: 8.7s;
 }
-.circle:nth-child(37) {
+.circle:nth-child(67) {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,10 +36,10 @@
     height: 75px;
     border-radius: 50%;
     background: #000;
-    animation: seesaw-circle2 5s forwards;
-    animation-delay: 7.5s;
+    animation: seesaw-circle2 3s forwards;
+    animation-delay: 8.7s;
 }
-.circle:nth-child(38) {
+.circle:nth-child(68) {
     position: absolute;
     top: 0;
     left: 50%;
@@ -50,13 +50,13 @@
     background: conic-gradient(
         gray 0deg,
         gray 180deg,
-        #df3d66 180deg,
-        #df3d66 360deg
+        #67c2ae 180deg,
+        #67c2ae 360deg
     );
-    animation: seesaw-circle3 5s forwards;
-    animation-delay: 12.5s;
+    animation: seesaw-circle3 3s forwards;
+    animation-delay: 11.7s;
 }
-.stick:nth-child(39) {
+.stick:nth-child(69) {
     position: absolute;
     top: 0;
     left: 50%;
@@ -64,11 +64,11 @@
     width: 550px;
     height: 15px;
     border-radius: 15px;
-    background: #df3d66;
-    animation: seesaw-stick2 5s forwards;
-    animation-delay: 12.5s;
+    background: #67c2ae;
+    animation: seesaw-stick2 3s forwards;
+    animation-delay: 11.7s;
 }
-.circle:nth-child(40) {
+.circle:nth-child(70) {
     position: absolute;
     top: 0;
     left: 0;
@@ -77,8 +77,8 @@
     height: 75px;
     border-radius: 50%;
     background: #fff;
-    animation: seesaw-circle4 5s forwards;
-    animation-delay: 12.5s;
+    animation: seesaw-circle4 3s forwards;
+    animation-delay: 11.7s;
 }
 
 @keyframes seesaw-circle1 {
@@ -90,7 +90,7 @@
     0%,25% {transform: translate(100px, -75px);}
     43%, 48% {transform: translate(100px, 350px);}
     70% {transform: translate(100px, 240px);}
-    85% {transform: translate(535px, 355px);}
+    90% {transform: translate(535px, 355px);}
     100% {transform: translate(535px, 355px) scale(20);}
 }
 @keyframes seesaw-circle3 {
@@ -102,8 +102,8 @@
     0%,25% {transform: translate(525px, -75px);}
     43%, 48% {transform: translate(525px, 350px);}
     70% {transform: translate(525px, 240px);}
-    85% {transform: translate(115px, 355px);}
-    100% {transform: translate(115px, 355px) scale(20);}
+    90% {transform: translate(115px, 350px);}
+    100% {transform: translate(115px, 350px) scale(20);}
 }
 @keyframes seesaw-stick1 {
     8%,32% {transform: translate(-50%, 380px) rotateZ(0deg);}
