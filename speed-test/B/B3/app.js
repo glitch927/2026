@@ -17,3 +17,4 @@ window.addEventListener('keydown', (e) => {
     if (y > maxy) y = maxy;
     box.style.transform = `translate(${x}px, ${y}px)`;
 })
+// Ai assist //
