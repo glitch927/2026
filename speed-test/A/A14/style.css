@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting, .logout {
+    margin: 10px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting::after {
+    content: "“설정” 버튼을 눌러 서비스를 설정할 수 있습니다.";
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 350px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+}
+.logout::after {
+    content: "로그아웃되고 메인페이지로 이동합니다.";
+    position: absolute;
+    left: 110px;
+    width: 300px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+}
+.setting:hover::after, .setting:focus::after, .logout:hover::after, .logout:focus::after{
+    display: flex;
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {margin-right: 20px;font-weight: bold;}
+input {border: solid 2px black;border-radius: 10px;width: 200px;height: 30px;outline: none;}
