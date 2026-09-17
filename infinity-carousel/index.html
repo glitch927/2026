@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무한 캐러셀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <input type="radio" name="slide" id="slide-1" hidden checked>
+        <input type="radio" name="slide" id="slide-2" hidden>
+        <input type="radio" name="slide" id="slide-3" hidden>
+        <input type="radio" name="slide" id="slide-4" hidden>
+        <input type="radio" name="slide" id="slide-5" hidden>
+        <input type="radio" name="slide" id="slide-6" hidden>
+
+        <div class="track first">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+        </div>
+        <div class="track end">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+        </div>
+        <div class="controller">
+            <label for="slide-6" class="prev lfirst">☜ 이전</label>
+            <label for="slide-2" class="next lfirst">다음 ☞</label>
+
+            <label for="slide-1" class="prev lsecond">☜ 이전</label>
+            <label for="slide-3" class="next lsecond">다음 ☞</label>
+
+            <label for="slide-2" class="prev lthird">☜ 이전</label>
+            <label for="slide-4" class="next lthird">다음 ☞</label>
+
+            <label for="slide-3" class="prev lfourth">☜ 이전</label>
+            <label for="slide-5" class="next lfourth">다음 ☞</label>
+
+            <label for="slide-4" class="prev lfifth">☜ 이전</label>
+            <label for="slide-6" class="next lfifth">다음 ☞</label>
+
+            <label for="slide-5" class="prev lsixth">☜ 이전</label>
+            <label for="slide-1" class="next lsixth">다음 ☞</label>
+        </div>
+    </div>
+</body>
+</html>
