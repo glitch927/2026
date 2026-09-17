@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrap {
+    padding: 10px 0px;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+input {
+    padding-left: 10px;
+    width: 275px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+button {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.litxt {
+    padding-left: 10px;
+    margin: 10px 0px;
+    width: 325px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    button {
+        border: none;
+        height: 26px;
+        background: red;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+}
